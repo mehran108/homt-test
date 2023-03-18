@@ -1,0 +1,30 @@
+<!-- You can now use your library component in app.component.html -->
+<ngx-slick-carousel
+  class="carousel banner-slider"
+  #slickModal="slick-carousel"
+  [config]="slideConfig"
+  (init)="slickInit($event)"
+  (breakpoint)="breakpoint($event)"
+  (afterChange)="afterChange($event)"
+  (beforeChange)="beforeChange($event)"
+>
+  <div ngxSlickItem *ngFor="let slide of slides" class="slide">
+  <div class="container p-0">
+    <div class="slider-wrapper row g-0">
+      <div class="col-6">
+        <div class="slider-content">
+          <span># fashion day</span>
+          <h1>80% OFF</h1>
+          <p>Discover fashion that suits to to you style</p>
+          <a>Check this out</a>
+        </div>  
+      </div>
+      <div class="col-6 d-flex align-items-end">
+        <img src="{{ slide.img }}" alt="" width="100%" />
+      </div>
+      
+    </div>
+  </div>
+    
+  </div>
+</ngx-slick-carousel>

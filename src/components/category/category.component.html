@@ -1,0 +1,17 @@
+<div class="category-section">
+  <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig" (init)="slickInit($event)"
+  (breakpoint)="breakpoint($event)" (afterChange)="afterChange($event)" (beforeChange)="beforeChange($event)">
+
+      <div ngxSlickItem *ngFor="let slide of slides" class="slide col-2">
+        <div class="category-wrapper">
+          <div class="category-icon">
+            <i class="icon-category"></i>
+            <span>{{slide.name}}</span>
+          </div>
+        </div>
+        <!-- <img src="{{ slide.img }}" alt="" width="100%" /> -->
+      </div>
+
+</ngx-slick-carousel>
+
+</div>

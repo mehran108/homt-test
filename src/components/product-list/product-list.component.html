@@ -1,0 +1,39 @@
+<div class="product-list-wrapper">
+  <div class="d-flex align-items-center justify-content-between product-header">
+    <h1>Best Sale Product</h1>
+    <a>See more</a>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <ng-container *ngFor="let product of products">
+        <div class="col-6">
+          <mat-card (click)="gotoDetails(product)">
+            <div class="card-fav">
+              <i class="icon-heart"></i>
+            </div>
+            <img mat-card-image src="{{ product.img }}" />
+            <mat-card-header>
+              <mat-card-title>{{ product.title }}</mat-card-title>
+              <mat-card-subtitle>{{ product.subTitle }}</mat-card-subtitle>
+            </mat-card-header>
+
+            <mat-card-content>
+              <!-- <p>
+              {{ product.description }}
+            </p> -->
+              <div class="d-flex ps-2 pe-2 align-items-center justify-content-between">
+                <ul class="p-0 m-0 d-flex align-items-center product-rating">
+                  <li><i class="icon-star"></i> <span>4.9</span></li>
+                  <li><span>2335</span></li>
+                </ul>
+                <span class="product-price">$12.00</span>
+              </div>
+            </mat-card-content>
+          </mat-card>
+        </div>
+      </ng-container>
+    </div>
+  </div>
+
+</div>

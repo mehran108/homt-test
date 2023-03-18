@@ -1,0 +1,109 @@
+/* You can add global styles to this file, and also import other style files */
+@import "./scss/icomoons";
+
+
+
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.slider-content{
+  padding-left: 15px;
+  color: #151828;
+  span{
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 14px;
+    padding-bottom: 8px;
+    display: block;
+  }
+  h1{
+    font-size: 35px;
+    font-weight: 600;
+    margin-bottom: 5px;
+  }
+  p{
+    color: #878a91;
+    font-size: 12px;
+    max-width: 190px;
+    margin-bottom: 18px
+  }
+  a{
+    background-color: #2a2d41;
+    color: #fff !important;
+    width: 120px;
+    height: 40px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-bottom: 30px;
+  }
+}
+
+.banner-slider{
+  background-color: #e8ebea;
+  margin-bottom: 0 !important;
+  padding-top: 90px;
+  .slick-dots{
+    bottom: inherit;
+    right: 10px;
+    top: 90px;
+    width: auto;
+  }
+}
+
+.slick-dots{
+  li{
+    margin: 0 1px;
+    width: 12px;
+    height: 12px;
+    &.slick-active{
+      button{
+        &:after{
+          width: 10px;
+          background-color: #151828;
+          border-radius: 5px;
+          height: 3px;
+        }
+      }
+    }
+    button{
+      padding: 0;
+      width: 12px;
+      height: 12px;
+      position: relative;
+      &:before{
+        display: none;
+      }
+      &:after{
+        content: "";
+        width: 3px;
+        height: 3px;
+        background-color: #b0b8b5;
+        display: block;
+        border-radius: 50%;
+        position: absolute;
+        transform: translate(-50%, -50%);
+      }
+    }
+  }
+}
+
+.mat-tab-group.mat-primary .mat-ink-bar, .mat-tab-nav-bar.mat-primary .mat-ink-bar {
+  background-color: #00b49c;
+}
+.mat-tab-label.mat-tab-label-active {
+  color: #00b49c;
+}
+.pointer {
+  cursor: pointer;
+}

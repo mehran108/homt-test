@@ -1,0 +1,26 @@
+.category-section{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.category-wrapper{
+    .category-icon{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      i{
+        background-color: #f6f6f6;
+      width: 50px;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 10px;
+      font-size: 25px;
+      margin-bottom: 10px;
+      }
+      span{
+        color: #acacac;
+      }
+    }
+  }
